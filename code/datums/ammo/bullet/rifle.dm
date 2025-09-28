@@ -8,8 +8,8 @@
 /datum/ammo/bullet/rifle
 	name = "10x24 bullet"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
-	damage = 40
-	penetration = ARMOR_PENETRATION_TIER_1
+	damage = 50
+	penetration = ARMOR_PENETRATION_TIER_2
 	accurate_range = 16
 	accuracy = HIT_ACCURACY_TIER_4
 	scatter = SCATTER_AMOUNT_TIER_10
@@ -20,7 +20,7 @@
 
 /datum/ammo/bullet/rifle/holo_target
 	name = "holo-targeting 10x24 bullet"
-	damage = 30
+	damage = 50
 	/// inflicts this many holo stacks per bullet hit
 	var/holo_stacks = 10
 	/// modifies the default cap limit of 100 by this amount
@@ -35,7 +35,7 @@
 
 /datum/ammo/bullet/rifle/holo_target/hunting
 	name = "holo-targeting 10x24 bullet"
-	damage = 25
+	damage = 50
 	holo_stacks = 15
 
 /datum/ammo/bullet/rifle/holo_target/tracer
@@ -65,8 +65,8 @@
 /datum/ammo/bullet/rifle/ap
 	name = "armor-piercing 10x24 bullet"
 
-	damage = 30
-	penetration = ARMOR_PENETRATION_TIER_8
+	damage = 55
+	penetration = ARMOR_PENETRATION_TIER_6
 
 /datum/ammo/bullet/rifle/ap/tracer
 	icon_state = "bullet_red"
@@ -103,7 +103,7 @@
 	name = "wall-penetrating 10x24 bullet"
 	shrapnel_chance = 0
 
-	damage = 35
+	damage = 55
 	penetration = ARMOR_PENETRATION_TIER_10
 
 /datum/ammo/bullet/rifle/ap/penetrating/set_bullet_traits()
@@ -123,8 +123,8 @@
 /datum/ammo/bullet/rifle/heap
 	name = "high-explosive armor-piercing 10x24 bullet"
 	headshot_state = HEADSHOT_OVERLAY_HEAVY
-	damage = 55//big damage, doesn't actually blow up because thats stupid.
-	penetration = ARMOR_PENETRATION_TIER_8
+	damage = 75//big damage, doesn't actually blow up because thats stupid.
+	penetration = ARMOR_PENETRATION_TIER_6
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_3
 
 /datum/ammo/bullet/rifle/heap/tracer
@@ -143,7 +143,7 @@
 	damage_type = BURN
 	shrapnel_chance = 0
 	flags_ammo_behavior = AMMO_BALLISTIC
-	damage = 30
+	damage = 50
 	shell_speed = AMMO_SPEED_TIER_4
 	accuracy = -HIT_ACCURACY_TIER_2
 	damage_falloff = DAMAGE_FALLOFF_TIER_10
@@ -160,7 +160,7 @@
 /datum/ammo/bullet/rifle/heavy
 	name = "10x28 bullet"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
-	damage = 55
+	damage = 60
 	penetration = ARMOR_PENETRATION_TIER_3
 	accuracy = HIT_ACCURACY_TIER_3
 	shell_speed = AMMO_SPEED_TIER_6
@@ -182,7 +182,7 @@
 /datum/ammo/bullet/rifle/heavy/ap
 	name = "armor-piercing 10x28 bullet"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
-	damage = 40
+	damage = 65
 	penetration = ARMOR_PENETRATION_TIER_7
 
 /datum/ammo/bullet/rifle/heavy/ap/tracer

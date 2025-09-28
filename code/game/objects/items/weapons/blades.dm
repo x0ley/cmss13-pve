@@ -716,7 +716,7 @@
 	icon_state = "knife_bowie"
 	item_state = "knife_bowie"
 	desc = "A large, devastating fighting knife of the old American west. Not an antique in of itself, but a high quality piece of equipment for the discerning outdoorsman. Now THIS is a knife."
-	w_class = SIZE_MEDIUM
+	w_class = SIZE_SMALL
 	force = MELEE_FORCE_TIER_6
 	throwforce = MELEE_FORCE_WEAK
 	hitsound = 'sound/weapons/bladeslice.ogg'
