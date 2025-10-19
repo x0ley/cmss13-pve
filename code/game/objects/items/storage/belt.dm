@@ -116,7 +116,7 @@
 		/obj/item/tool/shovel/etool,
 		/obj/item/device/lightreplacer,
 	)
-	storage_slots = 10
+	storage_slots = 12
 
 /obj/item/storage/belt/utility/full/fill_preset_inventory()
 	new /obj/item/tool/screwdriver(src)
@@ -602,7 +602,7 @@
 	icon_state = "marinebelt"
 	item_state = "marinebelt"
 	w_class = SIZE_LARGE
-	storage_slots = 5
+	storage_slots = 6
 	max_w_class = SIZE_MEDIUM
 	max_storage_space = 20
 	can_hold = list(

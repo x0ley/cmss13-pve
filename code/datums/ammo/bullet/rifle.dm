@@ -261,14 +261,14 @@
 /datum/ammo/bullet/rifle/heavy/holo_target/ap
 	name = "holo-targetting armor-piercing 10x28 bullet"
 	icon_state = "bullet"
-	damage = 30
-	penetration = ARMOR_PENETRATION_TIER_8
+	damage = 60
+	penetration = ARMOR_PENETRATION_TIER_7
 
 /datum/ammo/bullet/rifle/heavy/holo_target/impdet
 	name = "holo-targetting impact-detonating 10x28 bullet"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
 	holo_stacks = 50 //holo's all over targets, or something
-	damage = 30
+	damage = 40
 	penetration = -ARMOR_PENETRATION_TIER_2
 	damage_falloff = DAMAGE_FALLOFF_TIER_5
 
@@ -291,8 +291,8 @@
 
 /datum/ammo/bullet/rifle/heavy/upp_smartgun/flak
 	name = "12.7x40 flak bullet" //the gun makes the round detonate really early or something
-	damage = 20
-	penetration = -ARMOR_PENETRATION_TIER_2
+	damage = 50
+	penetration = ARMOR_PENETRATION_TIER_2
 	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_3
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
@@ -305,8 +305,8 @@
 
 /datum/ammo/bullet/rifle/heavy/upp/flak_spread
 	name = "12.7x40 flak"
-	damage = 15
-	penetration = -ARMOR_PENETRATION_TIER_2
+	damage = 25
+	penetration = ARMOR_PENETRATION_TIER_2
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	damage_var_low = PROJECTILE_VARIANCE_TIER_8
@@ -421,8 +421,8 @@
 	name = "high velocity incendiary 10x28 bullet"
 	flags_ammo_behavior = AMMO_BALLISTIC
 
-	damage = 210
-	penetration= ARMOR_PENETRATION_TIER_9
+	damage = 125
+	penetration= ARMOR_PENETRATION_TIER_10
 
 /datum/ammo/bullet/rifle/heavy/spec/incendiary/set_bullet_traits()
 	. = ..()
@@ -434,9 +434,9 @@
 	name = "high velocity explosive 10x28 bullet"
 	flags_ammo_behavior = AMMO_BALLISTIC
 
-	damage = 190
+	damage = 180
 	accuracy = HIT_ACCURACY_TIER_2
-	penetration = ARMOR_PENETRATION_TIER_7
+	penetration = ARMOR_PENETRATION_TIER_10
 	damage_armor_punch = 5
 
 /datum/ammo/bullet/rifle/heavy/spec/explosive/on_hit_mob(mob/M, obj/projectile/P)
@@ -462,7 +462,7 @@
 /datum/ammo/bullet/rifle/heavy/spec/du
 	name = "high velocity depleted uranium 10x28 bullet"
 
-	damage = 95 //Overall same damage as base rounds, but 15 tox DoT
+	damage = 125 //Overall same damage as base rounds, but 15 tox DoT
 	penetration = ARMOR_PENETRATION_TIER_10 //DU's a heavy armour-piercing kind of material
 	accuracy = HIT_ACCURACY_TIER_4
 	scatter = -SCATTER_AMOUNT_TIER_8

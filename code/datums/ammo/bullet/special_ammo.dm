@@ -173,8 +173,8 @@
 	ammo_glowing = TRUE
 	bullet_light_color = COLOR_SOFT_RED //Red bullets to indicate friendly fire restriction
 	accurate_range = 10
-	damage =  80
-	penetration = ARMOR_PENETRATION_TIER_2
+	damage =  150
+	penetration = ARMOR_PENETRATION_TIER_9
 	shell_speed = AMMO_SPEED_TIER_2
 	max_range = 15
 	effective_range_max = 7
@@ -194,21 +194,21 @@
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	accurate_range = 12
-	damage = 35
+	damage = 70
 	penetration = ARMOR_PENETRATION_TIER_6
 	shell_casing = /obj/effect/decal/ammo_casing/cartridge
 
 /datum/ammo/bullet/minigun/New()
 	..()
 	if(SSticker.mode && MODE_HAS_FLAG(MODE_FACTION_CLASH))
-		damage = 15
+		damage = 70
 	else if(SSticker.current_state < GAME_STATE_PLAYING)
 		RegisterSignal(SSdcs, COMSIG_GLOB_MODE_PRESETUP, PROC_REF(setup_hvh_damage))
 
 /datum/ammo/bullet/minigun/proc/setup_hvh_damage()
 	SIGNAL_HANDLER
 	if(MODE_HAS_FLAG(MODE_FACTION_CLASH))
-		damage = 15
+		damage = 70
 
 /datum/ammo/bullet/minigun/upp
 	icon_state = "bullet_green"
@@ -227,7 +227,7 @@
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_8
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	accurate_range = 12
-	damage = 45 //7.62x51 is scary
+	damage = 70 //7.62x51 is scary
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_2
 	shell_casing = /obj/effect/decal/ammo_casing/cartridge
 
@@ -242,6 +242,6 @@
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_8
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	accurate_range = 14
-	damage = 45
+	damage = 70
 	penetration = ARMOR_PENETRATION_TIER_2
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_2

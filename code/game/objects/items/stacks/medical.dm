@@ -55,8 +55,11 @@
 /obj/item/stack/medical/bruise_pack
 	name = "roll of gauze"
 	singular_name = "medical gauze"
-	desc = "Some sterile gauze to wrap around bloody stumps and lacerations."
+	desc = "Some sterile gauze with hemostatic to wrap around bloody stumps and lacerations."
 	icon_state = "brutepack"
+	heal_brute = 5
+	amount = 20
+	max_amount = 20
 
 	stack_id = "bruise pack"
 
@@ -136,8 +139,8 @@
 	singular_name = "ointment"
 	icon_state = "ointment"
 	heal_burn = 5
-	amount = 15
-	max_amount = 15
+	amount = 20
+	max_amount = 20
 
 	stack_id = "ointment"
 
