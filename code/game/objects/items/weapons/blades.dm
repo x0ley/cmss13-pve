@@ -5,7 +5,7 @@
 	item_state = "machete"
 	flags_atom = FPRINT|QUICK_DRAWABLE|CONDUCT
 	flags_equip_slot = SLOT_WAIST
-	force = MELEE_FORCE_STRONG
+	force = MELEE_FORCE_TIER_11
 	throwforce = MELEE_FORCE_WEAK
 	sharp = IS_SHARP_ITEM_BIG
 	flags_human_ai = MELEE_WEAPON_ITEM
@@ -53,12 +53,12 @@
 	desc = "An older issue USCM machete, never left testing. Designed in the Central African Republic. The notching made it hard to clean, and as such the USCM refused to adopt it - despite the superior bludgeoning power offered. Difficult to carry with the usual kit ."
 	icon_state = "arnold-machete"
 	item_state = "arnold-machete"
-	force = MELEE_FORCE_TIER_11
+	force = MELEE_FORCE_TIER_12
 
 /obj/item/weapon/sword/machete/arnold/weak
 	name = "\improper M2100 machete"
 	desc = "An older issue USCM machete, never left testing. Designed in the Central African Republic. The notching made it hard to clean, and as such the USCM refused to adopt it - despite the superior bludgeoning power offered. This one has been poorly maintained and as such can't really outperform adopted M2132 machete."
-	force = MELEE_FORCE_STRONG
+	force = MELEE_FORCE_TIER_10
 
 /obj/item/weapon/sword/hefa
 	name = "HEFA sword"
@@ -106,7 +106,7 @@
 	desc = "A finely made Japanese sword, with a well sharpened blade. The blade has been filed to a molecular edge, and is extremely deadly. Commonly found in the hands of mercenaries and yakuza."
 	icon_state = "katana"
 	item_state = "katana"
-	force = MELEE_FORCE_VERY_STRONG
+	force = MELEE_FORCE_TIER_10
 
 //To do: replace the toys.
 /obj/item/weapon/sword/katana/replica
@@ -719,7 +719,7 @@
 	item_state = "knife_bowie"
 	desc = "A large, devastating fighting knife of the old American west. Not an antique in of itself, but a high quality piece of equipment for the discerning outdoorsman. Now THIS is a knife."
 	w_class = SIZE_SMALL
-	force = MELEE_FORCE_TIER_6
+	force = MELEE_FORCE_TIER_8
 	throwforce = MELEE_FORCE_WEAK
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
@@ -730,6 +730,9 @@
 	icon_state = "knife_kukri"
 	desc = "A large, recurved fighting knife originating from the Indian subcontinent. Traditionally wielded by the Gurkhas of Nepal or their extrasolar colonial descendants, it's rare to see one in the hands of outsiders."
 	flags_equip_slot = SLOT_WAIST
+	force = MELEE_FORCE_TIER_10
+	throwforce = MELEE_FORCE_WEAK
+	w_class = SIZE_MEDIUM
 	attack_speed = 7
 
 /obj/item/weapon/knife/marine/sas

@@ -116,7 +116,7 @@
 	overdose = REAGENTS_OVERDOSE
 	overdose_critical = REAGENTS_OVERDOSE_CRITICAL
 	chemclass = CHEM_CLASS_COMMON
-	properties = list(PROPERTY_ANTICORROSIVE = 1)
+	properties = list(PROPERTY_ANTICORROSIVE = 2)
 
 /datum/reagent/medical/dermaline
 	name = "Dermaline"
@@ -127,7 +127,7 @@
 	overdose = LOWH_REAGENTS_OVERDOSE
 	overdose_critical = LOWH_REAGENTS_OVERDOSE_CRITICAL
 	chemclass = CHEM_CLASS_UNCOMMON
-	properties = list(PROPERTY_ANTICORROSIVE = 2)
+	properties = list(PROPERTY_ANTICORROSIVE = 3)
 
 /datum/reagent/medical/dexalin
 	name = "Dexalin"
@@ -160,7 +160,7 @@
 	overdose = REAGENTS_OVERDOSE
 	overdose_critical = REAGENTS_OVERDOSE_CRITICAL
 	chemclass = CHEM_CLASS_UNCOMMON
-	properties = list(PROPERTY_NEOGENETIC = 0.5, PROPERTY_ANTICORROSIVE = 0.5, PROPERTY_ANTITOXIC = 1, PROPERTY_OXYGENATING = 1)
+	properties = list(PROPERTY_NEOGENETIC = 1, PROPERTY_ANTICORROSIVE = 1, PROPERTY_ANTITOXIC = 1, PROPERTY_OXYGENATING = 1)
 
 /datum/reagent/medical/anti_toxin
 	name = "Dylovene"
@@ -246,7 +246,7 @@
 	description = "Alkysine is a drug used to lessen and heal the damage to neurological tissue after a catastrophic injury. Small amounts can repair extensive brain trauma. Functions as a very weak painkiller. Overdosing on alkysine is extremely toxic."
 	reagent_state = LIQUID
 	color = "#E89599"
-	custom_metabolism = AMOUNT_PER_TIME(1, 40 SECONDS)
+	custom_metabolism = AMOUNT_PER_TIME(1, 80 SECONDS)
 	overdose = REAGENTS_OVERDOSE
 	overdose_critical = REAGENTS_OVERDOSE_CRITICAL
 	chemclass = CHEM_CLASS_UNCOMMON
@@ -258,6 +258,7 @@
 	description = "Used for treating non-genetic eye trauma. Generally prescribed as treatment for most cases of eye trauma instead of performing a surgical operation."
 	reagent_state = LIQUID
 	color = "#C8A5DC" // rgb: 200, 165, 220
+	custom_metabolism = AMOUNT_PER_TIME(1, 80 SECONDS)
 	overdose = REAGENTS_OVERDOSE
 	overdose_critical = REAGENTS_OVERDOSE_CRITICAL
 	chemclass = CHEM_CLASS_UNCOMMON
@@ -284,7 +285,7 @@
 	overdose = REAGENTS_OVERDOSE
 	overdose_critical = REAGENTS_OVERDOSE_CRITICAL
 	chemclass = CHEM_CLASS_COMMON
-	properties = list(PROPERTY_NEOGENETIC = 1)
+	properties = list(PROPERTY_NEOGENETIC = 2)
 
 /datum/reagent/medical/meralyne
 	name = "Meralyne"
@@ -295,7 +296,7 @@
 	overdose = LOWH_REAGENTS_OVERDOSE
 	overdose_critical = LOWH_REAGENTS_OVERDOSE_CRITICAL
 	chemclass = CHEM_CLASS_UNCOMMON
-	properties = list(PROPERTY_NEOGENETIC = 2)
+	properties = list(PROPERTY_NEOGENETIC = 3)
 
 /datum/reagent/medical/adrenaline
 	name = "Epinephrine"
