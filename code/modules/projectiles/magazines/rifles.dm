@@ -5,28 +5,28 @@
 //M41A (MK2) PULSE RIFLE AMMUNITION
 
 /obj/item/ammo_magazine/rifle
-	name = "\improper M41A magazine (10x24mm)"
-	desc = "A 10mm assault rifle magazine."
+	name = "\improper M41A LE magazine (10x24mm)"
+	desc = "A 10mm Light Explosive assault rifle magazine."
 	caliber = "10x24mm"
 	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/uscm.dmi'
 	icon_state = "m41a"
 	item_state = "generic_mag"
 	w_class = SIZE_MEDIUM
 	default_ammo = /datum/ammo/bullet/rifle
-	max_rounds = 40
+	max_rounds = 50
 	gun_type = /obj/item/weapon/gun/rifle/m41a
 	ammo_band_icon = "+m41a_band"
 	ammo_band_icon_empty = "+m41a_band_e"
 
 /obj/item/ammo_magazine/rifle/extended
-	name = "\improper M41A extended magazine (10x24mm)"
-	desc = "A 10mm assault extended rifle magazine."
+	name = "\improper M41A LE extended magazine (10x24mm)"
+	desc = "A 10mm assault Light Explosive extended rifle magazine."
 	icon_state = "m41a_extended"
 	max_rounds = 60
 	bonus_overlay = "m41a_ex"
 
 /obj/item/ammo_magazine/rifle/incendiary
-	name = "\improper M41A incendiary magazine (10x24mm)"
+	name = "\improper M41A LE incendiary magazine (10x24mm)"
 	desc = "A 10mm assault rifle magazine."
 	default_ammo = /datum/ammo/bullet/rifle/incendiary
 	ammo_band_color = AMMO_BAND_COLOR_INCENDIARY
@@ -44,8 +44,8 @@
 	ammo_band_color = AMMO_BAND_COLOR_HEAP
 
 /obj/item/ammo_magazine/rifle/ap
-	name = "\improper M41A AP magazine (10x24mm)"
-	desc = "A 10mm armor piercing magazine."
+	name = "\improper M41A LEAP magazine (10x24mm)"
+	desc = "A 10mm Light Explosive Armor Piercing magazine."
 	default_ammo = /datum/ammo/bullet/rifle/ap
 	ammo_band_color = AMMO_BAND_COLOR_AP
 
@@ -83,8 +83,8 @@
 //M41A (MK1) TRUE AND ORIGINAL
 
 /obj/item/ammo_magazine/rifle/m41aMK1
-	name = "\improper M41A magazine (10x24mm)"
-	desc = "A long rectangular box magazine for the M41A. Holds 99 caseless 10x24mm rounds."
+	name = "\improper M41A LE magazine (10x24mm)"
+	desc = "A long rectangular box magazine for the M41A. Holds 99 caseless M303 Light Explosive 10x24mm rounds."
 	icon_state = "m41a_mk1"
 	max_rounds = 99
 	gun_type = /obj/item/weapon/gun/rifle/m41aMK1
@@ -101,7 +101,7 @@
 
 /obj/item/ammo_magazine/rifle/m41aMK1/ap
 	name = "\improper M41A AP magazine (10x24mm)"
-	desc = "A long rectangular box magazine for the M41A. Holds 99 caseless 10x24mm steelcore armor piercing rounds."
+	desc = "A long rectangular box magazine for the M41A. Holds 99 caseless 10x24mm M305 steelcore Light Explosive Armor Piercing rounds."
 	default_ammo = /datum/ammo/bullet/rifle/ap
 	ammo_band_color = AMMO_BAND_COLOR_AP
 
@@ -113,7 +113,7 @@
 
 /obj/item/ammo_magazine/rifle/m41aMK1/incendiary
 	name = "\improper M41A MK1 incendiary magazine (10x24mm)"
-	desc = "A long rectangular box magazine for the M41A. Holds 99 caseless 10x24mm incendiary rounds."
+	desc = "A long rectangular box magazine for the M41A. Holds 99 caseless Light Explosive Incendiary 10x24mm rounds."
 	default_ammo = /datum/ammo/bullet/rifle/incendiary
 	ammo_band_color = AMMO_BAND_COLOR_INCENDIARY
 

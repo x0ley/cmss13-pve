@@ -1,7 +1,7 @@
 //-----------------------M41A Rifle Mag Boxes-----------------------
 
 /obj/item/ammo_box/magazine/ap
-	name = "magazine box (AP M41A x 10)"
+	name = "magazine box (LEAP M41A x 10)"
 	flags_equip_slot = SLOT_BACK
 	overlay_ammo_type = "_ap"
 	overlay_content = "_ap"
@@ -778,7 +778,7 @@
 //-----------------------M41A MK1 Rifle Mag Boxes-----------------------
 
 /obj/item/ammo_box/magazine/mk1
-	name = "magazine box (M41A MK1 x 10)"
+	name = "magazine box (LE M41A MK1 x 10)"
 	flags_equip_slot = SLOT_BACK
 	overlay_ammo_type = "_reg_mk1"
 	overlay_gun_type = "_m41"
@@ -790,7 +790,7 @@
 	empty = TRUE
 
 /obj/item/ammo_box/magazine/mk1/ap
-	name = "magazine box (AP M41A MK1 x 10)"
+	name = "magazine box (LEAP M41A MK1 x 10)"
 	overlay_ammo_type = "_ap_mk1"
 	overlay_content = "_ap"
 	magazine_type = /obj/item/ammo_magazine/rifle/m41aMK1/ap
