@@ -175,11 +175,11 @@
 
 /obj/item/clothing/accessory/health/ceramic_plate/marine
 	name = "ASAPP armor plate"
-	desc = "Advanced Small Arms Protective Plate is a modular clip-on armor plate, designed to provide good protection against firearm, can stop AP and HEAP rounds."
+	desc = "Advanced Small Arms Protective Plate is a modular clip-on armor plate, designed to provide additional protection for USCMC combat personell, gives you extremely good protection against any bullet types, stops full metal jacket, armor piercing and even HEAP rounds."
 	icon_state = "armor_plate_100"
 	base_icon_state = "armor_plate"
 	overlay_state = "armor_plate_100"
-	slot = ACCESSORY_SLOT_M3UTILITY
+	slot = ACCESSORY_SLOT_PLATE
 
 /obj/item/clothing/accessory/health/scrap
 	name = "scrap metal"
@@ -226,14 +226,10 @@
 /obj/item/clothing/accessory/health/research_plate/on_attached(obj/item/clothing/attached_to, mob/living/carbon/human/user)
 	. = ..()
 	attached_uni = attached_to
+	RegisterSignal(user, COMSIG_MOB_ITEM_UNEQUIPPED, PROC_REF(on_removed_sig))
 
 /obj/item/clothing/accessory/health/research_plate/proc/can_recycle(mob/living/user) //override this proc for check if you can recycle the plate.
 	return FALSE
-
-
-/obj/item/clothing/accessory/health/research_plate/on_attached(obj/item/clothing/S, mob/living/carbon/human/user)
-	. = ..()
-	RegisterSignal(user, COMSIG_MOB_ITEM_UNEQUIPPED, PROC_REF(on_removed_sig))
 
 /obj/item/clothing/accessory/health/research_plate/on_removed(mob/living/user, obj/item/clothing/C)
 	. = ..()
@@ -337,7 +333,7 @@
 
 /obj/item/clothing/accessory/health/research_plate/emergency_injector/clicked(mob/user, list/mods)
 	. = ..()
-	if(mods["alt"])
+	if(mods[ALT_CLICK])
 		var/text = "You toggle overdose protection "
 		if(od_protection_mode == EMERGENCY_PLATE_OD_PROTECTION_DYNAMIC)
 			od_protection_mode = EMERGENCY_PLATE_OD_PROTECTION_OFF
@@ -455,6 +451,7 @@
 	UnregisterSignal(wearer, COMSIG_HUMAN_REVIVED)
 	to_chat(wearer, SPAN_NOTICE("[icon2html(src, viewers(src))] \The <b>[src]</b> beeps: Chemical preservatives reserves depleted, replace the [src]"))
 	wearer.revive_grace_period = 5 MINUTES
+
 
 
 
