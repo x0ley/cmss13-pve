@@ -483,7 +483,7 @@ GLOBAL_LIST_INIT(slot_to_contained_sprite_shorthand, list(
 #define ACCESSORY_SLOT_WRIST_L "Left wrist"
 #define ACCESSORY_SLOT_WRIST_R "Right wrist"
 
-/// Used for uniform armor inserts.
+/// Used for suit armor inserts.
 #define ACCESSORY_SLOT_ARMOR_C "Chest armor"
 
 #define ACCESSORY_SLOT_ARMOR_A "Arm armor"
