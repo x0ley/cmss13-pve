@@ -159,8 +159,8 @@
 	scrappable = FALSE
 	FF_projectile_durability_mult = 0.3
 
-	armor_health = 100
-	armor_maxhealth = 100
+	armor_health = 300
+	armor_maxhealth = 300
 
 	armor_shattersound = 'sound/effects/ceramic_shatter.ogg'
 
@@ -175,7 +175,7 @@
 
 /obj/item/clothing/accessory/health/ceramic_plate/marine
 	name = "ASAPP armor plate"
-	desc = "Advanced Small Arms Protective Plate is a modular clip-on armor plate, designed to provide additional protection for pilots, air crewmen, and point-men of the USCMC. While its almost miraculous protective properties are worth noting, it is quite cumbersome and makes you look even fatter than you actually are."
+	desc = "Advanced Small Arms Protective Plate is a modular clip-on armor plate, designed to provide good protection against firearm, can stop AP and HEAP rounds."
 	icon_state = "armor_plate_100"
 	base_icon_state = "armor_plate"
 	overlay_state = "armor_plate_100"
