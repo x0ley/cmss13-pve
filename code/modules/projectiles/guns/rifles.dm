@@ -1380,8 +1380,8 @@
 //UPP TYPE 71 RIFLE
 
 /obj/item/weapon/gun/rifle/type71
-	name = "\improper Type 71 pulse rifle"
-	desc = "The service rifle of the UPP, the Type 71 is an ergonomic, lightweight pulse rifle chambered in 10x27mm, packing a harder punch than the USCM M41A which balances out a lower firerate. Despite lackluster precision, an integrated recoil-dampening mechanism makes the rifle surprisingly controllable in bursts."
+	name = "\improper AK 22 pulse rifle"
+	desc = "The AK-22 is a 10x27 caliber pulse rifle developed by UPPAC. It is noticeably more powerful than the M41A, but the rate of fire of the AK-22 has been reduced to extend the life of the barrel. Unlike other pulse rifles, the AK-22 is significantly heavier, which is offset by its ease of operation and increased reliability."
 	icon = 'icons/obj/items/weapons/guns/guns_by_faction/upp.dmi'
 	icon_state = "type71"
 	item_state = "type71"
@@ -1407,26 +1407,19 @@
 		/obj/item/attachable/bayonet/upp,
 		/obj/item/attachable/extended_barrel,
 		/obj/item/attachable/heavy_barrel,
-		/obj/item/attachable/verticalgrip, // Underbarrel
-		/obj/item/attachable/verticalgrip/upp,
-		/obj/item/attachable/flashlight/grip/upp,
-		/obj/item/attachable/burstfire_assembly,
-		/obj/item/attachable/attached_gun/flamer,
-		/obj/item/attachable/attached_gun/flamer/advanced,
-		/obj/item/attachable/attached_gun/extinguisher,
-		/obj/item/attachable/attached_gun/grenade/type71,
-		/obj/item/attachable/attached_gun/grenade/type71/preloaded,
+		/obj/item/attachable/attached_gun/grenade/type71/ag80,
+		/obj/item/attachable/attached_gun/grenade/type71/ag80/preloaded,
 		/obj/item/attachable/lasersight, // Side Rail
 		/obj/item/attachable/lasersight/upp,
 		/obj/item/attachable/flashlight,
 		)
-	starting_attachment_types = list(/obj/item/attachable/stock/type71, /obj/item/attachable/attached_gun/grenade/type71)
+	starting_attachment_types = list(/obj/item/attachable/stock/type71, /obj/item/attachable/ak22_barrel)
 	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	flags_equip_slot = SLOT_BACK
 	start_automatic = TRUE
 
 /obj/item/weapon/gun/rifle/type71/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 17,"rail_x" = 10, "rail_y" = 23, "under_x" = 20, "under_y" = 13, "stock_x" = 11, "stock_y" = 13, "side_rail_x" = 23, "side_rail_y" = 16)
+	attachable_offset = list("muzzle_x" = 30, "muzzle_y" = 16,"rail_x" = 10, "rail_y" = 19, "under_x" = 21, "under_y" = 11, "stock_x" = 1, "stock_y" = 14, "side_rail_x" = 23, "side_rail_y" = 16)
 
 /obj/item/weapon/gun/rifle/type71/set_gun_config_values()
 	..()
@@ -1441,17 +1434,16 @@
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil_unwielded = RECOIL_AMOUNT_TIER_3
 
-
 /obj/item/weapon/gun/rifle/type71/preloaded
-	starting_attachment_types = list(/obj/item/attachable/stock/type71, /obj/item/attachable/attached_gun/grenade/type71/preloaded)
+	starting_attachment_types = list(/obj/item/attachable/stock/type71, /obj/item/attachable/ak22_barrel, /obj/item/attachable/attached_gun/grenade/type71/ag80/preloaded)
 
 /obj/item/weapon/gun/rifle/type71/unloaded
 	current_mag = null
 	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
 
 /obj/item/weapon/gun/rifle/type71/carbine
-	name = "\improper Type 71 'Commando' pulse rifle"
-	desc = "A much rarer variant of the Type 71, this version contains an integrated suppressor, integrated scope, and extensive fine-tuning. Many parts have been replaced, filed down, and improved upon. As a result, this variant is rarely seen outside of commando units."
+	name = "\improper AK 23 'Commando' pulse rifle"
+	desc = "The AK-23 is a heavily modified version of the AK—22 designed for the needs of the special forces. It features a noticeably higher rate of fire and significantly lower weight, while maintaining excellent ergonomics and durability. The rifle was also equipped with a built-in silencer and a sight."
 	icon_state = "type73"
 	item_state = "type73"
 	fire_sound = "gun_silenced"
@@ -1483,7 +1475,7 @@
 	recoil_unwielded = RECOIL_AMOUNT_TIER_4
 
 /obj/item/weapon/gun/rifle/type71/carbine/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 35, "muzzle_y" = 17,"rail_x" = 10, "rail_y" = 22, "under_x" = 23, "under_y" = 14, "stock_x" = 21, "stock_y" = 18, "side_rail_x" = 24, "side_rail_y" = 17)
+	attachable_offset = list("muzzle_x" = 30, "muzzle_y" = 16,"rail_x" = 10, "rail_y" = 19, "under_x" = 19, "under_y" = 13, "stock_x" = 1, "stock_y" = 14, "side_rail_x" = 23, "side_rail_y" = 16)
 
 /obj/item/weapon/gun/rifle/lw317
 	name = "\improper LW-317 pulse carbine"

@@ -1967,6 +1967,7 @@ Defined in conflicts.dm of the #defines folder.
 	desc = "A standard wooden stock for the Ithaca pump-action shotgun. More cumbersome than the standard issue stakeout, but reduces recoil and improves accuracy. Allegedly makes a pretty good club in a fight too."
 	slot = "stock"
 	icon_state = "stock"
+	melee_mod = 20
 	wield_delay_mod = WIELD_DELAY_FAST
 	pixel_shift_x = 32
 	pixel_shift_y = 15
@@ -1998,6 +1999,7 @@ Defined in conflicts.dm of the #defines folder.
 	pixel_shift_x = 32
 	pixel_shift_y = 15
 	hud_offset_mod = 2
+	melee_mod = 20
 
 /obj/item/attachable/stock/double/New()
 	..()
@@ -2094,6 +2096,7 @@ Defined in conflicts.dm of the #defines folder.
 	pixel_shift_x = 15
 	pixel_shift_y = 15
 	hud_offset_mod = 2
+	melee_mod = 20
 
 /obj/item/attachable/stock/type23/New()
 	..()
@@ -2246,7 +2249,7 @@ Defined in conflicts.dm of the #defines folder.
 	name = "\improper M41A solid stock"
 	desc = "A rare stock distributed in small numbers to USCM forces. Compatible with the M41A, this stock reduces recoil and improves accuracy, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle."
 	slot = "stock"
-	melee_mod = 10
+	melee_mod = 30
 	size_mod = 1
 	icon_state = "riflestock"
 	attach_icon = "riflestock_a"
@@ -2273,7 +2276,7 @@ Defined in conflicts.dm of the #defines folder.
 	name = "\improper M41A extendable stock"
 	desc = "The M41A's standard polymer extendable stock. When extended, it improves scatter, accuracy, and recoil, but slightly hinders agility."
 	slot = "stock"
-	melee_mod = 5
+	melee_mod = 20
 	size_mod = 1
 	icon_state = "m41_folding"
 	attach_icon = "m41_folding_a"
@@ -2711,7 +2714,7 @@ Defined in conflicts.dm of the #defines folder.
 	slot = "stock"
 	wield_delay_mod = WIELD_DELAY_NONE
 	flags_attach_features = NO_FLAGS
-	melee_mod = 20 //the thought of a upp spec beating people to death with a pk makes me laugh
+	melee_mod = 40 //the thought of a upp spec beating people to death with a pk makes me laugh
 	size_mod = 0
 
 /obj/item/attachable/type88_barrel
@@ -2738,6 +2741,18 @@ Defined in conflicts.dm of the #defines folder.
 	melee_mod = 0
 	size_mod = 0
 
+/obj/item/attachable/ak22_barrel
+    name = "AK 22 Barrel"
+    desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+    icon = 'icons/obj/items/weapons/guns/attachments/barrel.dmi'
+    icon_state = "ak22_barrel"
+    attach_icon = "ak22_barrel"
+    slot = "muzzle"
+    wield_delay_mod = WIELD_DELAY_NONE
+    flags_attach_features = NO_FLAGS
+    melee_mod = 0
+    size_mod = 0
+
 /obj/item/attachable/stock/type71
 	name = "Type 71 Stock"
 	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
@@ -2747,7 +2762,7 @@ Defined in conflicts.dm of the #defines folder.
 	slot = "stock"
 	wield_delay_mod = WIELD_DELAY_NONE
 	flags_attach_features = NO_FLAGS
-	melee_mod = 15
+	melee_mod = 25
 	size_mod = 0
 
 /obj/item/attachable/stock/type71/New()
