@@ -626,7 +626,7 @@
 /datum/ammo/bullet/rifle/ag80
 	name = "9.7x16 bullet"
 	damage = 40
-	penetration = ARMOR_PENETRATION_TIER_1 // shouldn't be higher pen than 10x24
+	penetration = ARMOR_PENETRATION_TIER_2 // shouldn't be higher pen than 10x24
 
 /datum/ammo/bullet/rifle/ag80/tracer
 	icon_state = "bullet_green"
@@ -636,7 +636,7 @@
 /datum/ammo/bullet/rifle/ag80/ap
 	name = "armor-piercing 9.7x16 bullet"
 	damage = 45
-	penetration = ARMOR_PENETRATION_TIER_5 // not as good as 10x24 AP but still impressive for calibre size
+	penetration = ARMOR_PENETRATION_TIER_6 // not as good as 10x24 AP but still impressive for calibre size
 
 /datum/ammo/bullet/rifle/ag80/rubber
 	name = "rubber 9.7x16 bullet"
@@ -648,7 +648,7 @@
 	name = "high-explosive armor-piercing 9.7x16 bullet"
 	headshot_state = HEADSHOT_OVERLAY_HEAVY
 	damage = 55 //big damage, doesn't actually blow up because thats stupid.
-	penetration = ARMOR_PENETRATION_TIER_5
+	penetration = ARMOR_PENETRATION_TIER_6
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_2 //thinner round should have less shrap potential vs the 10x24, no?
 
 /datum/ammo/bullet/rifle/ag80/heap/tracer
