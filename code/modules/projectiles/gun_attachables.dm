@@ -705,7 +705,7 @@ Defined in conflicts.dm of the #defines folder.
 	..()
 	accuracy_mod = HIT_ACCURACY_MULT_TIER_4
 	accuracy_unwielded_mod = HIT_ACCURACY_MULT_TIER_1
-	movement_onehanded_acc_penalty_mod = MOVEMENT_ACCURACY_PENALTY_MULT_TIER_5
+	movement_onehanded_acc_penalty_mod = MOVEMENT_ACCURACY_PENALTY_MULT_TIER_2
 
 /obj/item/attachable/reddot/upp
 	name = "EKP-9-M Red Dot Sight"
@@ -721,15 +721,29 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/reflex/New()
 	..()
-	accuracy_mod = HIT_ACCURACY_MULT_TIER_3
+	accuracy_mod = HIT_ACCURACY_MULT_TIER_4
 	accuracy_unwielded_mod = HIT_ACCURACY_MULT_TIER_1
 	scatter_mod = -SCATTER_AMOUNT_TIER_10
 	burst_scatter_mod = -1
-	movement_onehanded_acc_penalty_mod = MOVEMENT_ACCURACY_PENALTY_MULT_TIER_5
+	movement_onehanded_acc_penalty_mod = MOVEMENT_ACCURACY_PENALTY_MULT_TIER_2
 
 /obj/item/attachable/reflex/upp
 	name = "PK-12 Reflex Sight"
 	desc = "Reflector type gunsight compatible with most standard issue UPP firearms. Durable but the power supply is notoriously unreliable. Reduces scatter significantly and boosts accuracy slightly."
+
+/obj/item/attachable/reddot/small
+	name = "S5-Micro dot sight"
+	desc = "A lightweight, low-profile dot optic designed for rapid target acquisition with minimal weight penalty. Optimized for submachine guns and sidearms, it's ideal for close-quarters combat where speed and agility matter most."
+	desc_lore = "Designated AN/PVQ-64(M), the Micro variant of the S5 collimator sight strips the platform down to essentials. With reduced bulk and weight, it's favored by scouts and boarding teams. Despite the mil-spec designation, it's little more than a civilian reflex sight rebranded with a price hike."
+	icon = 'icons/obj/items/weapons/guns/attachments/rail.dmi'
+	icon_state = "reddot_small"
+	attach_icon = "reddot_small_a"
+	slot = "rail"
+
+/obj/item/attachable/reddot/small/New()
+	..()
+	accuracy_mod = HIT_ACCURACY_MULT_TIER_5
+	accuracy_unwielded_mod = HIT_ACCURACY_MULT_TIER_2
 
 /obj/item/attachable/flashlight
 	name = "rail flashlight"
@@ -992,27 +1006,12 @@ Defined in conflicts.dm of the #defines folder.
 	icon_state = "pve-sling"
 	attach_icon = "pve-sling_a"
 	slot = "rail"
-	var/retrieval_slot = WEAR_J_STORE
 
 /obj/item/attachable/sling/New()
 	..()
 	accuracy_unwielded_mod = -HIT_ACCURACY_MULT_TIER_1
 	recoil_unwielded_mod = -RECOIL_AMOUNT_TIER_2
 	scatter_unwielded_mod = -SCATTER_AMOUNT_TIER_2
-
-/obj/item/attachable/sling/can_be_attached_to_gun(mob/user, obj/item/weapon/gun/G)
-	if(SEND_SIGNAL(G, COMSIG_DROP_RETRIEVAL_CHECK) & COMPONENT_DROP_RETRIEVAL_PRESENT)
-		to_chat(user, SPAN_WARNING("[G] already has a retrieval system installed!"))
-		return FALSE
-	return ..()
-
-/obj/item/attachable/sling/Attach(obj/item/weapon/gun/G)
-	. = ..()
-	G.AddElement(/datum/element/drop_retrieval/gun, retrieval_slot)
-
-/obj/item/attachable/sling/Detach(mob/user, obj/item/weapon/gun/detaching_gub, drop_attachment = TRUE)
-	. = ..()
-	detaching_gub.RemoveElement(/datum/element/drop_retrieval/gun, retrieval_slot)
 
 /obj/item/attachable/scope
 	name = "S8 4x telescopic scope"
@@ -1982,7 +1981,6 @@ Defined in conflicts.dm of the #defines folder.
 	desc = "A standard wooden stock for the Ithaca pump-action shotgun. More cumbersome than the standard issue stakeout, but reduces recoil and improves accuracy. Allegedly makes a pretty good club in a fight too."
 	slot = "stock"
 	icon_state = "stock"
-	melee_mod = 20
 	wield_delay_mod = WIELD_DELAY_FAST
 	pixel_shift_x = 32
 	pixel_shift_y = 15
@@ -2014,7 +2012,6 @@ Defined in conflicts.dm of the #defines folder.
 	pixel_shift_x = 32
 	pixel_shift_y = 15
 	hud_offset_mod = 2
-	melee_mod = 20
 
 /obj/item/attachable/stock/double/New()
 	..()
@@ -2111,7 +2108,6 @@ Defined in conflicts.dm of the #defines folder.
 	pixel_shift_x = 15
 	pixel_shift_y = 15
 	hud_offset_mod = 2
-	melee_mod = 20
 
 /obj/item/attachable/stock/type23/New()
 	..()
@@ -2264,7 +2260,7 @@ Defined in conflicts.dm of the #defines folder.
 	name = "\improper M41A solid stock"
 	desc = "A rare stock distributed in small numbers to USCM forces. Compatible with the M41A, this stock reduces recoil and improves accuracy, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle."
 	slot = "stock"
-	melee_mod = 30
+	melee_mod = 10
 	size_mod = 1
 	icon_state = "riflestock"
 	attach_icon = "riflestock_a"
@@ -2291,7 +2287,7 @@ Defined in conflicts.dm of the #defines folder.
 	name = "\improper M41A extendable stock"
 	desc = "The M41A's standard polymer extendable stock. When extended, it improves scatter, accuracy, and recoil, but slightly hinders agility."
 	slot = "stock"
-	melee_mod = 20
+	melee_mod = 5
 	size_mod = 1
 	icon_state = "m41_folding"
 	attach_icon = "m41_folding_a"
@@ -2729,7 +2725,7 @@ Defined in conflicts.dm of the #defines folder.
 	slot = "stock"
 	wield_delay_mod = WIELD_DELAY_NONE
 	flags_attach_features = NO_FLAGS
-	melee_mod = 40 //the thought of a upp spec beating people to death with a pk makes me laugh
+	melee_mod = 20 //the thought of a upp spec beating people to death with a pk makes me laugh
 	size_mod = 0
 
 /obj/item/attachable/type88_barrel
@@ -2739,18 +2735,6 @@ Defined in conflicts.dm of the #defines folder.
 	icon_state = "type88_barrel"
 	attach_icon = "type88_barrel"
 	slot = "special"
-	wield_delay_mod = WIELD_DELAY_NONE
-	flags_attach_features = NO_FLAGS
-	melee_mod = 0
-	size_mod = 0
-
-/obj/item/attachable/type73suppressor
-	name = "Type 73 Integrated Suppressor"
-	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
-	icon = 'icons/obj/items/weapons/guns/attachments/barrel.dmi'
-	icon_state = "type73_suppressor"
-	attach_icon = "type73_suppressor"
-	slot = "muzzle"
 	wield_delay_mod = WIELD_DELAY_NONE
 	flags_attach_features = NO_FLAGS
 	melee_mod = 0
@@ -2768,6 +2752,18 @@ Defined in conflicts.dm of the #defines folder.
     melee_mod = 0
     size_mod = 0
 
+/obj/item/attachable/type73suppressor
+	name = "Type 73 Integrated Suppressor"
+	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	icon = 'icons/obj/items/weapons/guns/attachments/barrel.dmi'
+	icon_state = "type73_suppressor"
+	attach_icon = "type73_suppressor"
+	slot = "muzzle"
+	wield_delay_mod = WIELD_DELAY_NONE
+	flags_attach_features = NO_FLAGS
+	melee_mod = 0
+	size_mod = 0
+
 /obj/item/attachable/stock/type71
 	name = "Type 71 Stock"
 	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
@@ -2777,7 +2773,7 @@ Defined in conflicts.dm of the #defines folder.
 	slot = "stock"
 	wield_delay_mod = WIELD_DELAY_NONE
 	flags_attach_features = NO_FLAGS
-	melee_mod = 25
+	melee_mod = 15
 	size_mod = 0
 
 /obj/item/attachable/stock/type71/New()
@@ -3538,7 +3534,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/attached_gun/grenade/type71
 	name = "\improper Type 83 overslung grenade launcher"
-	desc = "Unorthodox design, this single-round grenade launchers was made specifically for use with Type 71 pulse rifles. It can be quickly connected to electronic firing mechanism of the rifle, albeit wiring is prone to failures."
+	desc = "Unorthodox design, this single-round grenade launchers was made specifically for few UPP guns. It can be quickly connected to electronic firing mechanism of the rifle, albeit wiring is prone to failures."
 	icon_state = "type83"
 	attach_icon = "type83_a"
 	caliber = "40x103mm"
@@ -3585,8 +3581,8 @@ Defined in conflicts.dm of the #defines folder.
 	attach_icon = "flamethrower_a"
 	desc = "A weapon-mounted refillable flamethrower attachment. It has a secondary setting for a more intense flame with far less propulsion ability and heavy fuel usage."
 	w_class = SIZE_MEDIUM
-	current_rounds = 40
-	max_rounds = 40
+	current_rounds = 50
+	max_rounds = 50
 	max_range = 5
 	slot = "under"
 	fire_sound = 'sound/weapons/gun_flamethrower3.ogg'
@@ -3618,14 +3614,14 @@ Defined in conflicts.dm of the #defines folder.
 	if(intense_mode)
 		to_chat(user, SPAN_WARNING("You change \the [src] back to using a normal and more stable flame."))
 		round_usage_per_tile = 1
-		burn_level = BURN_LEVEL_TIER_1
+		burn_level = BURN_LEVEL_TIER_4
 		burn_duration = BURN_TIME_TIER_1
 		max_range = 5
 		intense_mode = FALSE
 	else
 		to_chat(user, SPAN_WARNING("You change \the [src] to use a more intense and volatile flame."))
 		round_usage_per_tile = 5
-		burn_level = BURN_LEVEL_TIER_5
+		burn_level = BURN_LEVEL_TIER_6
 		burn_duration = BURN_TIME_TIER_2
 		max_range = 2
 		intense_mode = TRUE
@@ -3725,8 +3721,8 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/attached_gun/flamer/advanced
 	name = "advanced mini flamethrower"
-	current_rounds = 50
-	max_rounds = 50
+	current_rounds = 60
+	max_rounds = 60
 	max_range = 6
 	burn_level = BURN_LEVEL_TIER_5
 	burn_duration = BURN_TIME_TIER_2
@@ -4020,6 +4016,25 @@ Defined in conflicts.dm of the #defines folder.
 	attach_icon = "lasersight_upp_a"
 	pixel_shift_x = 15
 	pixel_shift_y = 18
+
+/obj/item/attachable/lasersight/micro
+	name = "micro laser module"
+	desc = "A compact, high-precision laser sight engineered exclusively for the M10 Auto Pistol and M4A4 handgun. Offers exceptional accuracy gains by interfacing directly with the weapon's internal targeting systems."
+	desc_lore = "An advanced derivative of the AN/PEQ-42 line, the '42M' variant was precision-tuned by Kessler Optics for use with the M10 Auto Pistol. Its microcontroller syncs with the pistol's fire-control unit for superior point-of-aim fidelity and scatter compensation. Rare, expensive, and typically reserved for elite units or covert applications."
+	icon = 'icons/obj/items/weapons/guns/attachments/under.dmi'
+	icon_state = "lasersight_micro"
+	attach_icon = "lasersight_micro_a"
+	slot = "under"
+	pixel_shift_x = 17
+	pixel_shift_y = 17
+
+/obj/item/attachable/lasersight/micro/New()
+	..()
+	accuracy_mod = HIT_ACCURACY_MULT_TIER_2
+	movement_onehanded_acc_penalty_mod = -MOVEMENT_ACCURACY_PENALTY_MULT_TIER_5
+	scatter_mod = -SCATTER_AMOUNT_TIER_10
+	scatter_unwielded_mod = -SCATTER_AMOUNT_TIER_10
+	accuracy_unwielded_mod = HIT_ACCURACY_MULT_TIER_2
 
 /obj/item/attachable/bipod
 	name = "bipod"

@@ -1149,8 +1149,14 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/weapon/m4a3_custom
 	display_name = "Custom M4A3 Pistol"
 	path = /obj/item/storage/box/loadout/M4A3_custom_loadout
-	cost = 4
+	cost = 3
 	allowed_origins = USCM_ORIGINS
+
+/datum/gear/weapon/m4a4
+	display_name = "M4A4 Service Pistol"
+	path = /obj/item/weapon/gun/pistol/m4a3/m4a4
+	allowed_origins = USCM_ORIGINS
+	cost = 4
 
 /datum/gear/weapon/m1911
 	display_name = "M1911 Pistol"
@@ -1488,10 +1494,15 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/storage/fancy/cigarettes/lucky_strikes
 	cost = 0
 
+/datum/gear/smoking/pack_balaji
+	display_name = "Pack Of Balaji"
+	path = /obj/item/storage/fancy/cigarettes/balaji
+	cost = 0
+
 /datum/gear/smoking/pack_laika
 	display_name = "Pack Of Laika"
 	path = /obj/item/storage/fancy/cigarettes/laika
-	allowed_origins = UPP_ORIGINS
+	cost = 0
 
 /datum/gear/smoking/pack_emeraldgreen
 	display_name = "Pack Of Emerald Greens"
@@ -1524,7 +1535,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/smoking/pack_exec
 	display_name = "Pack Of Executive Selects"
 	path = /obj/item/storage/fancy/cigarettes/blackpack
-	cost = 4
+	cost = 3
 
 /datum/gear/smoking/weed_joint
 	display_name = "Joint of weed"
