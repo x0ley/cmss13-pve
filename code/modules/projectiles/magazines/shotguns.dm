@@ -159,7 +159,7 @@ also doesn't really matter. You can only reload them with handfuls.
 	desc = "An internal magazine. It is not supposed to be seen or removed."
 	default_ammo = /datum/ammo/bullet/shotgun/buckshot
 	caliber = "12g"
-	max_rounds = 4
+	max_rounds = 8
 	current_rounds = 4
 	chamber_closed = 0
 
@@ -194,7 +194,7 @@ also doesn't really matter. You can only reload them with handfuls.
 
 /obj/item/ammo_magazine/internal/shotgun/combat
 	caliber = "12g"
-	max_rounds = 6
+	max_rounds = 8
 	current_rounds = 6
 
 /obj/item/ammo_magazine/internal/shotgun/combat/slug
@@ -208,7 +208,7 @@ also doesn't really matter. You can only reload them with handfuls.
 
 /obj/item/ammo_magazine/internal/shotgun/marsoc
 	caliber = "12g"
-	max_rounds = 7
+	max_rounds = 8
 	current_rounds = 7
 
 /obj/item/ammo_magazine/internal/shotgun/merc
@@ -216,7 +216,7 @@ also doesn't really matter. You can only reload them with handfuls.
 
 /obj/item/ammo_magazine/internal/shotgun/type23
 	caliber = "8g"
-	max_rounds = 4
+	max_rounds = 5
 	current_rounds = 4
 	default_ammo = /datum/ammo/bullet/shotgun/heavy/buckshot
 

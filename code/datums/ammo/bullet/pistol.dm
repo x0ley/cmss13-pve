@@ -31,11 +31,11 @@
 //Limited by its lack of versatility and lower supply, so marines finally have an answer for flanker castes that isn't just buckshot.
 
 /datum/ammo/bullet/pistol/hollow
-	name = "hollowpoint 9x19 bullet"
+	name = "A27 9x19 bullet"
 
-	damage = 55 //hollowpoint is strong
-	penetration = -ARMOR_PENETRATION_TIER_3 //hollowpoint can't pierce armor!
-	shrapnel_chance = SHRAPNEL_CHANCE_TIER_5 //hollowpoint causes shrapnel
+	damage = 55
+	penetration = ARMOR_PENETRATION_TIER_3
+	shrapnel_chance = SHRAPNEL_CHANCE_TIER_5
 
 // Used by M4A3 AP and mod88
 /datum/ammo/bullet/pistol/ap
