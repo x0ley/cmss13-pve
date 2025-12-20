@@ -1027,7 +1027,7 @@
 	w_class = SIZE_LARGE
 	max_w_class = SIZE_SMALL
 	storage_flags = NONE
-	storage_slots = 4
+	storage_slots = 5
 
 /obj/item/clothing/accessory/storage/holster
 	name = "shoulder holster"
@@ -1669,9 +1669,11 @@
 	hold = /obj/item/storage/internal/accessory/black_vest/m3shotgun
 
 /obj/item/storage/internal/accessory/black_vest/m3shotgun
+	storage_slots = 10
 	can_hold = list(
 		/obj/item/ammo_magazine/handful,
 	)
+
 
 /obj/item/clothing/accessory/storage/webbing/m3/small
 	name = "\improper M3 Pattern Small Pouch Webbing"
@@ -1723,7 +1725,7 @@
 	hold = /obj/item/storage/internal/accessory/black_vest/m3grenade
 
 /obj/item/storage/internal/accessory/black_vest/m3grenade
-	storage_slots = 7
+	storage_slots = 10
 	can_hold = list(
 		/obj/item/explosive/grenade/high_explosive,
 		/obj/item/explosive/grenade/high_explosive/super,
@@ -1777,7 +1779,7 @@
 	hold = /obj/item/storage/internal/accessory/black_vest/m3grenade/recon
 
 /obj/item/storage/internal/accessory/black_vest/m3grenade/recon
-	storage_slots = 10
+	storage_slots = 15
 
 /obj/item/clothing/accessory/storage/webbing/m3/recon/shotgun
 	name = "\improper M3-R Pattern Shell Webbing"
@@ -1786,7 +1788,7 @@
 	hold = /obj/item/storage/internal/accessory/black_vest/m3shotgun/recon
 
 /obj/item/storage/internal/accessory/black_vest/m3shotgun/recon
-	storage_slots = 7
+	storage_slots = 10
 
 /obj/item/clothing/accessory/storage/webbing/m3/recon/medic
 	name = "\improper M3-R Pattern Corpsman Webbing"
@@ -1801,7 +1803,7 @@
 	)
 
 /obj/item/storage/internal/accessory/black_vest/m3generic/recon
-	storage_slots = 6
+	storage_slots = 7
 	can_hold = list(
 		/obj/item/storage/surgical_case/regular,
 		/obj/item/reagent_container/blood,
@@ -1829,7 +1831,7 @@
 	hold = /obj/item/storage/internal/accessory/black_vest/m56/preset
 
 /obj/item/storage/internal/accessory/black_vest/m56
-	storage_slots = 3
+	storage_slots = 4
 
 /obj/item/storage/internal/accessory/black_vest/m56/preset/fill_preset_inventory()
 	new /obj/item/storage/box/mre(src)
@@ -1845,7 +1847,7 @@
 	hold = /obj/item/storage/internal/accessory/black_vest/m56/grenade
 
 /obj/item/storage/internal/accessory/black_vest/m56/grenade
-	storage_slots = 4
+	storage_slots = 5
 	can_hold = list(
 		/obj/item/explosive/grenade/high_explosive,
 		/obj/item/explosive/grenade/high_explosive/super,
@@ -1875,7 +1877,7 @@
 	slot = ACCESSORY_SLOT_M3UTILITY
 
 /obj/item/storage/internal/accessory/webbing/m3mag/upp
-	storage_slots = 4
+	storage_slots = 5
 	can_hold = list(
 		/obj/item/attachable/bayonet,
 		/obj/item/device/flashlight/flare,
@@ -1922,12 +1924,12 @@
 
 /obj/item/clothing/accessory/storage/webbing/m3/uppmags/rmc
 	name = "\improper 82 Pattern Magazine Webbing"
-	desc = "A set of webbing pouches that can carry four magazines. Comes with clips to mount to the standard armor system in use by the Royal Marines."
+	desc = "A set of webbing pouches that can carry five magazines. Comes with clips to mount to the standard armor system in use by the Royal Marines."
 	icon_state = "rmc_webbing_magazine"
 	hold = /obj/item/storage/internal/accessory/webbing/m3mag/rmc
 
 /obj/item/storage/internal/accessory/webbing/m3mag/rmc
-	storage_slots = 4
+	storage_slots = 5
 	can_hold = list(
 		/obj/item/ammo_magazine/rifle/nsg23,
 		/obj/item/ammo_magazine/sniper,

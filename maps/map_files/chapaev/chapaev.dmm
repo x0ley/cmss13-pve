@@ -1353,10 +1353,6 @@
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/cryo_cells)
 "cx" = (
-/obj/structure/closet/secure_closet/marine_personal/upp/rifleman{
-	can_block_movement = 0;
-	pixel_x = 7
-	},
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
 	},
@@ -1496,10 +1492,6 @@
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/engineering)
 "cK" = (
-/obj/structure/closet/secure_closet/marine_personal/upp/rifleman{
-	can_block_movement = 0;
-	pixel_x = 7
-	},
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
 	},
@@ -2805,6 +2797,17 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/canteen)
+"fG" = (
+/obj/structure/machinery/door/airlock/upp_utility{
+	name = "\improper Combat Information Center";
+	req_one_access_txt = "240;241"
+	},
+/obj/structure/machinery/door/poddoor/almayer/locked{
+	dir = 4;
+	name = "\improper Maintenance Tunnels"
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/golden_arrow/engineering)
 "fH" = (
 /obj/structure/machinery/light/small{
 	light_power = 0.8;
@@ -4544,6 +4547,8 @@
 /obj/structure/surface/rack{
 	color = "#8B9490"
 	},
+/obj/item/storage/box/guncase/heavy/smg/type64,
+/obj/item/ammo_box/magazine/type64,
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/prep_hallway)
 "ka" = (
@@ -5057,6 +5062,7 @@
 	light_range = 5;
 	dir = 1
 	},
+/obj/item/ammo_box/magazine/type71/large,
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/prep_hallway)
 "lp" = (
@@ -7960,6 +7966,9 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/engineering)
+"sZ" = (
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/engineering)
 "tu" = (
 /obj/structure/surface/table/almayer{
 	color = "#8B9490"
@@ -8020,6 +8029,17 @@
 "uU" = (
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/golden_arrow/hangar)
+"vc" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/structure/surface/rack{
+	color = "#8B9490"
+	},
+/obj/item/storage/box/guncase/heavy/sniper/svd_iff,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/prep_hallway)
 "vp" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -8312,6 +8332,10 @@
 	},
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/golden_arrow/hangar)
+"Nn" = (
+/obj/structure/machinery/light/small,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/engineering)
 "Nq" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/machinery/door/airlock/upp_utility{
@@ -8381,6 +8405,17 @@
 	},
 /turf/open/floor/corsat,
 /area/golden_arrow/hangar)
+"Tv" = (
+/obj/structure/machinery/door/poddoor/almayer/locked{
+	dir = 4;
+	name = "\improper Maintenance Tunnels"
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/engineering)
+"TA" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/engineering)
 "TV" = (
 /obj/structure/surface/table/almayer{
 	color = "#8B9490"
@@ -12976,7 +13011,7 @@ kl
 kl
 kx
 kn
-jY
+vc
 jU
 jI
 jw
@@ -26264,8 +26299,8 @@ mV
 aa
 ab
 af
-af
-af
+Tv
+aa
 af
 af
 af
@@ -26415,10 +26450,10 @@ mV
 mV
 aa
 ac
-ac
-ac
-ac
-ac
+af
+sZ
+Nn
+af
 ac
 ac
 ac
@@ -26568,7 +26603,7 @@ mV
 aa
 aa
 aa
-aa
+fG
 aa
 aa
 aa
@@ -26719,10 +26754,10 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
+aa
+sZ
+Nn
+aa
 mV
 mV
 mV
@@ -26871,10 +26906,10 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
+aa
+sZ
+TA
+aa
 mV
 mV
 mV
@@ -27023,10 +27058,10 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
+aa
+TA
+sZ
+aa
 mV
 mV
 mV
@@ -27175,10 +27210,10 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
+aa
+sZ
+sZ
+aa
 mV
 mV
 mV
@@ -27327,10 +27362,10 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
+aa
+sZ
+TA
+aa
 mV
 mV
 mV
@@ -27479,10 +27514,10 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
+aa
+TA
+Nn
+aa
 mV
 mV
 mV
