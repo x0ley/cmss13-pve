@@ -1,7 +1,7 @@
 /* HUD DATUMS */
 
 //GLOBAL HUD LIST
-GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, alist(
+GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, list(
 	MOB_HUD_SECURITY_BASIC = new /datum/mob_hud/security/basic(),
 	MOB_HUD_SECURITY_ADVANCED = new /datum/mob_hud/security/advanced(),
 	MOB_HUD_MEDICAL_BASIC = new /datum/mob_hud/medical/basic(),
