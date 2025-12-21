@@ -958,7 +958,7 @@ GLOBAL_LIST_INIT(apc_wire_descriptions, list(
 		area.update_power_channels(FALSE, FALSE, FALSE)
 
 /obj/structure/machinery/power/apc/proc/get_wire_descriptions()
-	return alist(
+	return list(
 		APC_WIRE_MAIN_POWER   = "Main power",
 		APC_WIRE_IDSCAN    = "ID scanner"
 	)
