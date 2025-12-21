@@ -1077,6 +1077,14 @@
 	pill_type_to_fill = /obj/item/reagent_container/pill/tricordrazine
 	maptext_label = "Ti"
 
+/obj/item/storage/pill_bottle/oxycodone
+	name = "\improper Oxycodone pill bottle"
+	desc = "This contains pills that treat severe pain, even during live surgery."
+	icon_state = "pill_canister9"
+	pill_type_to_fill = /obj/item/reagent_container/pill/oxycodone
+	skilllock = SKILL_MEDICAL_DEFAULT
+	maptext_label = "Ox"
+
 //---------PILL PACKETS---------
 /obj/item/storage/pill_bottle/packet
 	name = "\improper pill packet"

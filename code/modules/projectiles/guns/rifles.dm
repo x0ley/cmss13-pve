@@ -93,6 +93,8 @@
 	recoil_unwielded = RECOIL_AMOUNT_TIER_2
 
 
+
+
 //variant without ugl attachment
 /obj/item/weapon/gun/rifle/m41a/stripped
 	starting_attachment_types = list()
@@ -316,7 +318,12 @@
 		/obj/item/attachable/reflex,
 		/obj/item/attachable/heavy_barrel,
 		/obj/item/attachable/scope/pve,
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/bayonet/upp,
+		/obj/item/attachable/bayonet/co2,
 		/obj/item/attachable/attached_gun/grenade/mk1,
+		/obj/item/attachable/attached_gun/flamer,
+		/obj/item/attachable/attached_gun/flamer/advanced,
 		/obj/item/attachable/stock/rifle/collapsible,
 		/obj/item/attachable/sling,
 	)
@@ -1423,7 +1430,7 @@
 
 /obj/item/weapon/gun/rifle/type71/set_gun_config_values()
 	..()
-	set_fire_delay(FIRE_DELAY_TIER_9)
+	set_fire_delay(FIRE_DELAY_TIER_10)
 	set_burst_amount(BURST_AMOUNT_TIER_4)
 	set_burst_delay(FIRE_DELAY_TIER_9)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4

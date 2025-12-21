@@ -302,6 +302,7 @@
 	max_storage_space = 42
 	max_w_class = SIZE_SMALL
 	can_hold = list(
+		/obj/item/device/healthanalyzer/soul,
 		/obj/item/device/healthanalyzer,
 		/obj/item/bodybag,
 		/obj/item/reagent_container/glass/bottle,

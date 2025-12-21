@@ -734,7 +734,7 @@
 	durationmod = -5
 	radiusmod = -0.5
 	properties = list(
-		PROPERTY_INTENSITY = BURN_LEVEL_TIER_2,
+		PROPERTY_INTENSITY = BURN_LEVEL_TIER_3,
 		PROPERTY_DURATION = BURN_TIME_TIER_5,
 		PROPERTY_RADIUS = 5,
 	)
@@ -751,7 +751,7 @@
 	durationmod = -1
 	radiusmod = -0.5
 	properties = list(
-		PROPERTY_INTENSITY = BURN_LEVEL_TIER_8,
+		PROPERTY_INTENSITY = BURN_LEVEL_TIER_9,
 		PROPERTY_DURATION = BURN_TIME_TIER_1,
 		PROPERTY_RADIUS = 5,
 	)
@@ -764,7 +764,7 @@
 	burncolor = "#e49320"
 	burn_sprite = "dynamic"
 	properties = list(
-		PROPERTY_INTENSITY = BURN_LEVEL_TIER_2,
+		PROPERTY_INTENSITY = BURN_LEVEL_TIER_3,
 		PROPERTY_DURATION = BURN_TIME_TIER_2,
 		PROPERTY_RADIUS = 5,
 	)
@@ -776,7 +776,7 @@
 	description = "Known as Ultra Thick Napthal Fuel, a sticky combustible liquid chemical, typically used with flamethrowers."
 	burncolor = "#EE6515"
 	properties = list(
-		PROPERTY_INTENSITY = BURN_LEVEL_TIER_5,
+		PROPERTY_INTENSITY = BURN_LEVEL_TIER_7,
 		PROPERTY_DURATION = BURN_TIME_TIER_2,
 		PROPERTY_RADIUS = 5,
 	)
@@ -791,7 +791,7 @@
 	burncolor = COLOR_GREEN
 	burn_sprite = "green"
 	properties = list(
-		PROPERTY_INTENSITY = BURN_LEVEL_TIER_2,
+		PROPERTY_INTENSITY = BURN_LEVEL_TIER_4,
 		PROPERTY_DURATION = BURN_TIME_TIER_5,
 		PROPERTY_RADIUS = 7,
 	)
@@ -806,7 +806,7 @@
 	burncolor = "#00b8ff"
 	burn_sprite = "blue"
 	properties = list(
-		PROPERTY_INTENSITY = BURN_LEVEL_TIER_7,
+		PROPERTY_INTENSITY = BURN_LEVEL_TIER_9,
 		PROPERTY_DURATION = BURN_TIME_TIER_4,
 		PROPERTY_RADIUS = 6,
 	)
@@ -821,7 +821,7 @@
 	burncolor = COLOR_GREEN
 	burn_sprite = "green"
 	properties = list(
-		PROPERTY_INTENSITY = BURN_LEVEL_TIER_2,
+		PROPERTY_INTENSITY = BURN_LEVEL_TIER_4,
 		PROPERTY_DURATION = BURN_TIME_TIER_5,
 		PROPERTY_RADIUS = 6,
 	)
@@ -849,7 +849,7 @@
 	burncolor = "#641dd6"
 	burn_sprite = "dynamic"
 	properties = list(
-		PROPERTY_INTENSITY 			= BURN_LEVEL_TIER_7,
+		PROPERTY_INTENSITY 			= BURN_LEVEL_TIER_9,
 		PROPERTY_DURATION 			= BURN_TIME_TIER_4,
 		PROPERTY_RADIUS 			= 6,
 		PROPERTY_FIRE_PENETRATING	= 1

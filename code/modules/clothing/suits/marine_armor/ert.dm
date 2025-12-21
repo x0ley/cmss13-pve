@@ -250,11 +250,12 @@
 	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
 	armor_laser = CLOTHING_ARMOR_MEDIUM
 	armor_energy = CLOTHING_ARMOR_MEDIUM
-	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	flags_inventory = BLOCKSHARPOBJ|BLOCK_KNOCKDOWN
+	armor_bomb = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bio = CLOTHING_ARMOR_MEDIUM
 	armor_rad = CLOTHING_ARMOR_MEDIUM
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
-	slowdown = SLOWDOWN_ARMOR_MEDIUM
+	slowdown = SLOWDOWN_ARMOR_LOWHEAVY
 	movement_compensation = SLOWDOWN_ARMOR_LIGHT
 
 /obj/item/clothing/suit/marine/faction/UPP

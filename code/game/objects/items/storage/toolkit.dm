@@ -10,6 +10,7 @@
 	matter = list("plastic" = 2000)
 	can_hold = list(
 		/obj/item/circuitboard,
+		/obj/item/tool/shovel/etool/folded,
 		/obj/item/device/flashlight,
 		/obj/item/clothing/glasses/welding,
 		/obj/item/device/analyzer,

@@ -705,7 +705,7 @@ Defined in conflicts.dm of the #defines folder.
 	..()
 	accuracy_mod = HIT_ACCURACY_MULT_TIER_4
 	accuracy_unwielded_mod = HIT_ACCURACY_MULT_TIER_1
-	movement_onehanded_acc_penalty_mod = MOVEMENT_ACCURACY_PENALTY_MULT_TIER_5
+	movement_onehanded_acc_penalty_mod = MOVEMENT_ACCURACY_PENALTY_MULT_TIER_2
 
 /obj/item/attachable/reddot/upp
 	name = "EKP-9-M Red Dot Sight"
@@ -721,15 +721,29 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/reflex/New()
 	..()
-	accuracy_mod = HIT_ACCURACY_MULT_TIER_3
+	accuracy_mod = HIT_ACCURACY_MULT_TIER_4
 	accuracy_unwielded_mod = HIT_ACCURACY_MULT_TIER_1
 	scatter_mod = -SCATTER_AMOUNT_TIER_10
 	burst_scatter_mod = -1
-	movement_onehanded_acc_penalty_mod = MOVEMENT_ACCURACY_PENALTY_MULT_TIER_5
+	movement_onehanded_acc_penalty_mod = MOVEMENT_ACCURACY_PENALTY_MULT_TIER_2
 
 /obj/item/attachable/reflex/upp
 	name = "PK-12 Reflex Sight"
 	desc = "Reflector type gunsight compatible with most standard issue UPP firearms. Durable but the power supply is notoriously unreliable. Reduces scatter significantly and boosts accuracy slightly."
+
+/obj/item/attachable/reddot/small
+	name = "S5-Micro dot sight"
+	desc = "A lightweight, low-profile dot optic designed for rapid target acquisition with minimal weight penalty. Optimized for submachine guns and sidearms, it's ideal for close-quarters combat where speed and agility matter most."
+	desc_lore = "Designated AN/PVQ-64(M), the Micro variant of the S5 collimator sight strips the platform down to essentials. With reduced bulk and weight, it's favored by scouts and boarding teams. Despite the mil-spec designation, it's little more than a civilian reflex sight rebranded with a price hike."
+	icon = 'icons/obj/items/weapons/guns/attachments/rail.dmi'
+	icon_state = "reddot_small"
+	attach_icon = "reddot_small_a"
+	slot = "rail"
+
+/obj/item/attachable/reddot/small/New()
+	..()
+	accuracy_mod = HIT_ACCURACY_MULT_TIER_5
+	accuracy_unwielded_mod = HIT_ACCURACY_MULT_TIER_2
 
 /obj/item/attachable/flashlight
 	name = "rail flashlight"
@@ -3538,7 +3552,7 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/attached_gun/grenade/type71
 	name = "\improper Type 83 overslung grenade launcher"
-	desc = "Unorthodox design, this single-round grenade launchers was made specifically for use with Type 71 pulse rifles. It can be quickly connected to electronic firing mechanism of the rifle, albeit wiring is prone to failures."
+	desc = "Unorthodox design, this single-round grenade launchers was made specifically for few UPP guns. It can be quickly connected to electronic firing mechanism of the rifle, albeit wiring is prone to failures."
 	icon_state = "type83"
 	attach_icon = "type83_a"
 	caliber = "40x103mm"
@@ -3585,8 +3599,8 @@ Defined in conflicts.dm of the #defines folder.
 	attach_icon = "flamethrower_a"
 	desc = "A weapon-mounted refillable flamethrower attachment. It has a secondary setting for a more intense flame with far less propulsion ability and heavy fuel usage."
 	w_class = SIZE_MEDIUM
-	current_rounds = 40
-	max_rounds = 40
+	current_rounds = 50
+	max_rounds = 50
 	max_range = 5
 	slot = "under"
 	fire_sound = 'sound/weapons/gun_flamethrower3.ogg'
@@ -3618,14 +3632,14 @@ Defined in conflicts.dm of the #defines folder.
 	if(intense_mode)
 		to_chat(user, SPAN_WARNING("You change \the [src] back to using a normal and more stable flame."))
 		round_usage_per_tile = 1
-		burn_level = BURN_LEVEL_TIER_1
+		burn_level = BURN_LEVEL_TIER_4
 		burn_duration = BURN_TIME_TIER_1
 		max_range = 5
 		intense_mode = FALSE
 	else
 		to_chat(user, SPAN_WARNING("You change \the [src] to use a more intense and volatile flame."))
 		round_usage_per_tile = 5
-		burn_level = BURN_LEVEL_TIER_5
+		burn_level = BURN_LEVEL_TIER_6
 		burn_duration = BURN_TIME_TIER_2
 		max_range = 2
 		intense_mode = TRUE
@@ -3725,8 +3739,8 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/attached_gun/flamer/advanced
 	name = "advanced mini flamethrower"
-	current_rounds = 50
-	max_rounds = 50
+	current_rounds = 60
+	max_rounds = 60
 	max_range = 6
 	burn_level = BURN_LEVEL_TIER_5
 	burn_duration = BURN_TIME_TIER_2
@@ -4020,6 +4034,25 @@ Defined in conflicts.dm of the #defines folder.
 	attach_icon = "lasersight_upp_a"
 	pixel_shift_x = 15
 	pixel_shift_y = 18
+
+/obj/item/attachable/lasersight/micro
+	name = "micro laser module"
+	desc = "A compact, high-precision laser sight engineered exclusively for the M10 Auto Pistol and M4A4 handgun. Offers exceptional accuracy gains by interfacing directly with the weapon's internal targeting systems."
+	desc_lore = "An advanced derivative of the AN/PEQ-42 line, the '42M' variant was precision-tuned by Kessler Optics for use with the M10 Auto Pistol. Its microcontroller syncs with the pistol's fire-control unit for superior point-of-aim fidelity and scatter compensation. Rare, expensive, and typically reserved for elite units or covert applications."
+	icon = 'icons/obj/items/weapons/guns/attachments/under.dmi'
+	icon_state = "lasersight_micro"
+	attach_icon = "lasersight_micro_a"
+	slot = "under"
+	pixel_shift_x = 17
+	pixel_shift_y = 17
+
+/obj/item/attachable/lasersight/micro/New()
+	..()
+	accuracy_mod = HIT_ACCURACY_MULT_TIER_2
+	movement_onehanded_acc_penalty_mod = -MOVEMENT_ACCURACY_PENALTY_MULT_TIER_5
+	scatter_mod = -SCATTER_AMOUNT_TIER_10
+	scatter_unwielded_mod = -SCATTER_AMOUNT_TIER_10
+	accuracy_unwielded_mod = HIT_ACCURACY_MULT_TIER_2
 
 /obj/item/attachable/bipod
 	name = "bipod"

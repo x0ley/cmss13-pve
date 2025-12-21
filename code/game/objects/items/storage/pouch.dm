@@ -872,6 +872,7 @@
 		/obj/item/clothing/glasses/welding,
 		/obj/item/device/analyzer,
 		/obj/item/device/demo_scanner,
+		/obj/item/tool/shovel/etool,
 		/obj/item/device/reagent_scanner,
 		/obj/item/device/t_scanner,
 		/obj/item/stack/cable_coil,
@@ -1292,6 +1293,7 @@
 	max_w_class = SIZE_MEDIUM
 	icon_state = "tools"
 	can_hold = list(
+		/obj/item/weapon/swiss_army_knife,
 		/obj/item/tool/crowbar,
 		/obj/item/tool/screwdriver,
 		/obj/item/tool/weldingtool,

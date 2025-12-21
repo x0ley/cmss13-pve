@@ -1685,7 +1685,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/misc/survival_tool
 	display_name = "Colonial Companion multi-tool"
 	path = /obj/item/weapon/swiss_army_knife
-	cost = 4 // Two tools & a knife in one package
+	cost = 3 // Two tools & a knife in one package
 
 /datum/gear/misc/can_opener
 	display_name = "Can opener"

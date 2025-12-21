@@ -301,7 +301,7 @@
 	ammo_band_icon = "+type71_band"
 	ammo_band_icon_empty = "+type71_band_e"
 	default_ammo = /datum/ammo/bullet/rifle/upp
-	max_rounds = 60
+	max_rounds = 50
 	gun_type = /obj/item/weapon/gun/rifle/type71
 
 /obj/item/ammo_magazine/rifle/type71/rubber

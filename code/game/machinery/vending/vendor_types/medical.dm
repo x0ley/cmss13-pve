@@ -508,7 +508,11 @@
 		list("Pill Bottle (Kelotane)", floor(scale * 4), /obj/item/storage/pill_bottle/kelotane, VENDOR_ITEM_REGULAR),
 		list("Pill Bottle (Peridaxon)", floor(scale * 3), /obj/item/storage/pill_bottle/peridaxon, VENDOR_ITEM_REGULAR),
 		list("Pill Bottle (Tramadol)", floor(scale * 4), /obj/item/storage/pill_bottle/tramadol, VENDOR_ITEM_REGULAR),
+		list("Pill Bottle (Oxycodone)", floor(scale * 2), /obj/item/storage/pill_bottle/oxycodone, VENDOR_ITEM_REGULAR),
 		list("Pill Bottle (Tricordazine)", floor(scale * 4), /obj/item/storage/pill_bottle/tricord, VENDOR_ITEM_REGULAR),
+		list("Pill Bottle (Imidazoline)", floor(scale * 2), /obj/item/storage/pill_bottle/imidazoline, VENDOR_ITEM_REGULAR),
+		list("Pill Bottle (Alkysine)", floor(scale *2), /obj/item/storage/pill_bottle/alkysine, VENDOR_ITEM_REGULAR),
+		list("Pill Bottle (Iron)", floor(scale *2), /obj/item/storage/pill_bottle/iron, VENDOR_ITEM_REGULAR),
 
 		list("MEDICAL UTILITIES", -1, null, null),
 		list("Surgical Line", floor(scale * 2), /obj/item/tool/surgery/surgical_line, VENDOR_ITEM_REGULAR),
@@ -517,6 +521,7 @@
 		list("Health Diagnostic Equipment", floor(scale * 3), /obj/item/device/healthanalyzer/soul, VENDOR_ITEM_REGULAR),
 		list("M276 Pattern Medical Storage Rig", floor(scale * 2), /obj/item/storage/belt/medical, VENDOR_ITEM_REGULAR),
 		list("Medical HUD Glasses", floor(scale * 3), /obj/item/clothing/glasses/hud/health, VENDOR_ITEM_REGULAR),
+		list("Defibrillator", floor(scale * 1), /obj/item/device/defibrillator, VENDOR_ITEM_REGULAR),
 		list("Syringe", floor(scale * 7), /obj/item/reagent_container/syringe, VENDOR_ITEM_REGULAR),
 	)
 
@@ -710,6 +715,9 @@
 		list("Pill Bottle (Peridaxon)", floor(scale * 2), /obj/item/storage/pill_bottle/peridaxon, VENDOR_ITEM_REGULAR),
 		list("Pill Bottle (Tramadol)", floor(scale * 3), /obj/item/storage/pill_bottle/tramadol, VENDOR_ITEM_REGULAR),
 		list("Pill Bottle (Tricordazine)", floor(scale * 3), /obj/item/storage/pill_bottle/tricord, VENDOR_ITEM_REGULAR),
+		list("Pill Bottle (Imidazoline)", floor(scale * 2), /obj/item/storage/pill_bottle/imidazoline, VENDOR_ITEM_REGULAR),
+		list("Pill Bottle (Alkysine)", floor(scale *2), /obj/item/storage/pill_bottle/alkysine, VENDOR_ITEM_REGULAR),
+		list("Pill Bottle (Iron)", floor(scale *2), /obj/item/storage/pill_bottle/iron, VENDOR_ITEM_REGULAR),
 
 		list("MEDICAL UTILITIES", -1, null, null),
 		list("Surgical Line", floor(scale * 2), /obj/item/tool/surgery/surgical_line, VENDOR_ITEM_REGULAR),
@@ -718,6 +726,7 @@
 		list("Health Diagnostic Equipment", floor(scale * 3), /obj/item/device/healthanalyzer/soul, VENDOR_ITEM_REGULAR),
 		list("Type 41 Pattern Medical Storage Rig", floor(scale * 2), /obj/item/storage/belt/medical/upp, VENDOR_ITEM_REGULAR),
 		list("Medical HUD Glasses", floor(scale * 3), /obj/item/clothing/glasses/hud/health, VENDOR_ITEM_REGULAR),
+		list("Defibrillator", floor(scale * 1), /obj/item/device/defibrillator, VENDOR_ITEM_REGULAR),
 		list("Syringe", floor(scale * 7), /obj/item/reagent_container/syringe, VENDOR_ITEM_REGULAR)
 	)
 

@@ -363,7 +363,7 @@
 	preload = /obj/item/explosive/grenade/high_explosive/impact/rmc20mm
 
 	is_lobbing = TRUE
-	internal_slots = 8
+	internal_slots = 12
 	direct_draw = TRUE
 
 /obj/item/weapon/gun/launcher/grenade/m92/rmc/set_gun_config_values()

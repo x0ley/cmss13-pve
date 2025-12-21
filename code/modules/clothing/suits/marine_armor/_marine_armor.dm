@@ -486,6 +486,7 @@
 	armor_rad = CLOTHING_ARMOR_MEDIUM
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
 	movement_compensation = SLOWDOWN_ARMOR_LIGHT
+	slowdown = SLOWDOWN_ARMOR_LIGHT
 
 // M3-EOD pattern heavy armor
 /obj/item/clothing/suit/storage/marine/heavy

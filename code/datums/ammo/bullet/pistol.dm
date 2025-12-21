@@ -11,7 +11,7 @@
 	accuracy = HIT_ACCURACY_TIER_3
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
 	damage = 35
-	penetration= 0
+	penetration = ARMOR_PENETRATION_TIER_1
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_2
 	shell_casing = /obj/effect/decal/ammo_casing
 
@@ -108,7 +108,7 @@
 	accuracy = HIT_ACCURACY_TIER_3
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
 	damage = 65
-	penetration = -ARMOR_PENETRATION_TIER_4 //bigger but slower, armor works to counter more effectively
+	penetration = ARMOR_PENETRATION_TIER_1 //bigger but slower, armor works to counter more effectively
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_2
 
 /datum/ammo/bullet/pistol/heavy/special //That's a spicy meataball. Hits harder, moves faster, can only be used in select guns

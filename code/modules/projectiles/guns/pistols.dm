@@ -60,9 +60,11 @@
 		/obj/item/attachable/suppressor,
 		/obj/item/attachable/reddot,
 		/obj/item/attachable/reflex,
+		/obj/item/attachable/reddot/small,
 		/obj/item/attachable/flashlight,
 		/obj/item/attachable/compensator,
 		/obj/item/attachable/lasersight,
+		/obj/item/attachable/lasersight/micro,
 		/obj/item/attachable/extended_barrel,
 		/obj/item/attachable/heavy_barrel,
 		/obj/item/attachable/burstfire_assembly,
@@ -91,20 +93,19 @@
 
 /obj/item/weapon/gun/pistol/m4a3/custom
 	name = "\improper M4A3 custom pistol"
-	desc = "Sporting a nickel finish and possibly faux ivory grips, this 9mm pistol has been customized by a well known gunsmith on Gateway Station. It offers no tactical advantages."
+	desc = "Sporting a nickel finish and possibly faux ivory grip, this 9mm pistol has been customized by a well known gunsmith on Gateway Station. It offers no tactical advantages."
 	icon_state = "m4a3c"
 	item_state = "m4a3c"
 
 /obj/item/weapon/gun/pistol/m4a3/custom/set_gun_config_values()
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_12)
-	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_6
 	accuracy_mult_unwielded = BASE_ACCURACY_MULT
 	scatter = SCATTER_AMOUNT_TIER_6
 	burst_scatter_mult = SCATTER_AMOUNT_TIER_6
 	scatter_unwielded = SCATTER_AMOUNT_TIER_6
 	damage_mult = BASE_BULLET_DAMAGE_MULT
-
 
 //L54A2, browning hi-power but in space
 
@@ -179,7 +180,7 @@
 	scatter = SCATTER_AMOUNT_TIER_7
 	burst_scatter_mult = SCATTER_AMOUNT_TIER_7
 	scatter_unwielded = SCATTER_AMOUNT_TIER_7
-	damage_mult = BASE_BULLET_DAMAGE_MULT
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_4
 
 /obj/item/weapon/gun/pistol/vp70/unloaded
 	current_mag = null
@@ -348,7 +349,7 @@
 	scatter = SCATTER_AMOUNT_TIER_6
 	burst_scatter_mult = SCATTER_AMOUNT_TIER_6
 	scatter_unwielded = SCATTER_AMOUNT_TIER_6
-	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_3
+	damage_mult = BASE_BULLET_DAMAGE_MULT
 
 /obj/item/weapon/gun/pistol/np92/suppressed
 	name = "\improper NPZ92 pistol"
@@ -774,7 +775,7 @@ It is a modified Beretta 93R, and can fire three-round burst or single fire. Whe
 
 /obj/item/weapon/gun/pistol/heavy/co/set_gun_config_values()
 	..()
-	set_fire_delay(FIRE_DELAY_TIER_5)
+	set_fire_delay(FIRE_DELAY_TIER_6)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
 	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
 	scatter = SCATTER_AMOUNT_TIER_6
