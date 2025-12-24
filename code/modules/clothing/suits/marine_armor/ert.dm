@@ -895,4 +895,30 @@
 	time_to_unequip = 20
 	time_to_equip = 20
 
+//=============================//IASFs\\==================================\\
+//=======================================================================\\
 
+/obj/item/clothing/suit/storage/marine/veteran/royal_marine/light/iasf
+
+	name = "goshawk airborne vest"
+	desc = "A lightweight, high-mobility flak vest designed for the Imperial Armed Space Force’s airborne troops. Developed by Alphatech, the Goshawk offers crucial protection while ensuring paratroopers retain full freedom of movement during high-risk insertions. Advanced composite plating and reinforced webbing make it effective against shrapnel and small-arms fire, striking the perfect balance between defense and agility for those who strike fast and strike hard."
+	icon = 'icons/obj/items/clothing/suits/suits_by_faction/TWE.dmi'
+	item_icons = list(
+		WEAR_JACKET = 'icons/mob/humans/onmob/clothing/suits/suits_by_faction/TWE.dmi'
+	)
+	icon_state = "iasf_light"
+	item_state = "iasf_light"
+	storage_slots = 3
+
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW // Goon stats
+	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	armor_energy = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
+	armor_rad = CLOTHING_ARMOR_MEDIUM
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
+
+	flags_armor_protection = (BODY_FLAG_CHEST)
+	flags_cold_protection = (BODY_FLAG_CHEST)
+	flags_heat_protection = (BODY_FLAG_CHEST)
+
+	slowdown = SLOWDOWN_ARMOR_SUPER_LIGHT // Gotta go fast

@@ -655,7 +655,12 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/clothing/under/shorts/red/uscm
 	cost = 1
 	allowed_origins = USCM_ORIGINS
-
+// IASF jackets
+/datum/gear/clothing/iasf_combat_jacket
+	display_name = "IASF combat jacket"
+	path = /obj/item/clothing/suit/storage/jacket/marine/service/iasf_combat_jacket
+	cost = 3
+	allowed_origins = USCM_ORIGINS
 /*
 //================================================
 				Armor & Body Paints
