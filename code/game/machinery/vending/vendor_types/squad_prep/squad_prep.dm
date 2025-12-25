@@ -564,7 +564,6 @@
 		list("Royal Marine Uniform", round(scale * 10), /obj/item/clothing/under/marine/veteran/royal_marine, VENDOR_ITEM_REGULAR),
 		list("Combat Gloves", round(scale * 10), /obj/item/clothing/gloves/marine, VENDOR_ITEM_REGULAR),
 		list("Mk16 Tactical Helmet", round(scale * 10), /obj/item/clothing/head/helmet/marine/veteran/pmc/gunner/rmc, VENDOR_ITEM_REGULAR),
-		list("L5A2 ballistic helmet", round(scale * 10), /obj/item/clothing/head/helmet/marine/veteran/royal_marine_pvp, VENDOR_ITEM_REGULAR),
 		list("Tactical Beanie", round(scale * 10), /obj/item/clothing/head/beanie/royal_marine, VENDOR_ITEM_REGULAR),
 		list("Radio Headset", round(scale * 10), /obj/item/device/radio/headset/almayer/marine/solardevils/rmc, VENDOR_ITEM_REGULAR),
 
