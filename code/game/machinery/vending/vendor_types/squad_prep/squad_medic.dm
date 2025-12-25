@@ -365,9 +365,6 @@ GLOBAL_LIST_INIT(cm_vending_clothing_rmc_medic, list(
 // Chemical vendor
 
 GLOBAL_LIST_INIT(cm_vending_chemical_medic, list(
-		list("HELMETS", -1, null, null, null),
-		list("L5A2 ballistic medic helmet", round(scale * 10), /obj/item/clothing/head/helmet/marine/veteran/royal_marine_pvp/medic, VENDOR_ITEM_REGULAR),
-
 		list("ESSENTIAL MEDICATION (CHOOSE 1)", 0, null, null, null),
 		list("Pill Bottle (Imidazoline-Alkysine)", 0, /obj/item/storage/pill_bottle/imialk, MARINE_CAN_BUY_SHOES, VENDOR_ITEM_RECOMMENDED),
 		list("Liquid Bottle (Imidazoline-Alkysine)", 0, /obj/item/reagent_container/glass/bottle/imialk, MARINE_CAN_BUY_SHOES, VENDOR_ITEM_RECOMMENDED),
