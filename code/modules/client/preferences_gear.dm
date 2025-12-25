@@ -661,6 +661,19 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/clothing/suit/storage/jacket/marine/service/iasf_combat_jacket
 	cost = 3
 	allowed_origins = USCM_ORIGINS
+// TWE jackets
+/datum/gear/clothing/royal_marine_commando_service_jacket
+	display_name = "Royal Marine Commando service jacket"
+	path = /obj/item/clothing/suit/storage/jacket/marine/rmc/service
+	cost = 3
+	allowed_origins = TWE_ORIGINS
+
+/datum/gear/clothing/royal_marine_commando_service_jacket_black
+	display_name = "Royal Marine Commando service jacket | Black"
+	path = /obj/item/clothing/suit/storage/jacket/marine/rmc/service/black
+	cost = 3
+	allowed_origins = TWE_ORIGINS
+
 /*
 //================================================
 				Armor & Body Paints
